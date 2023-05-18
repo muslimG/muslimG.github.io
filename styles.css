@@ -5,6 +5,14 @@ body {
 }
 
 
+.spaced-list {
+    list-style-type: disc;  
+    padding-left: 20px;  
+}
+
+.spaced-list li {
+    margin-bottom: 15px;  
+}
 
 
 .navbar {
