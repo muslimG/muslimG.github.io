@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 3rem 1rem;
+}
+
+
+
+
+.navbar {
+    border-radius: 15px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-link {
+    color: #007bff;
+}
+
+.nav-link.active {
+    color: #000;
+}
+
+.twitter-feed {
+    margin-top: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+.member {
+    margin-bottom: 1rem;
+}
+
+.member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.member a {
+    display: inline-block;
+    vertical-align: middle;
+}
