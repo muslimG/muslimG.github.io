@@ -5,6 +5,10 @@ body {
 }
 
 
+.collapse-custom {
+   margin-right: 4px;
+}
+
 .spaced-list {
     list-style-type: disc;  
     padding-left: 20px;  
@@ -13,7 +17,6 @@ body {
 .spaced-list li {
     margin-bottom: 15px;  
 }
-
 
 .navbar {
     border-radius: 15px;
@@ -57,4 +60,34 @@ footer {
 .member a {
     display: inline-block;
     vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    .collapse-custom {
+        margin-right: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .member img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .twitter-feed {
+        margin-top: 1rem;
+    }
+    
+    .navbar {
+        margin-bottom: 1rem;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+    }
 }
