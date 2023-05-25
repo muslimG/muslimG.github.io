@@ -4,51 +4,52 @@ body {
     padding: 3rem 1rem;
 }
 
-
-.collapse-custom {
-   margin-right: 4px;
-}
-
-.spaced-list {
-    list-style-type: disc;  
-    padding-left: 20px;  
-}
-
-.spaced-list li {
-    margin-bottom: 15px;  
+.header-container {
+    background-color: #c0c0c0;
+    border-radius: 15px;
+    padding: 20px 0;
+    color: #000000;
 }
 
 .navbar {
     border-radius: 15px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.2); /* added shadow */
 }
 
 .navbar-brand {
     font-weight: bold;
-    color: #007bff;
-}
-
-.nav-link {
-    color: #007bff;
-}
-
-.nav-link.active {
     color: #000;
 }
 
-.twitter-feed {
-    margin-top: 2rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+.nav-link {
+    color: #000;
+    transition: color 0.3s ease;
 }
 
-footer {
-    margin-top: 3rem;
+.nav-link:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.nav-link.active {
+    color: #007bff;
 }
 
 .member {
     margin-bottom: 1rem;
     display: flex;
     flex-wrap: nowrap;
-    align-items: start;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.15); /* added shadow */
+}
+
+.member:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.2); /* intensified shadow */
 }
 
 .member img {
@@ -57,41 +58,45 @@ footer {
     border-radius: 50%;
     margin-right: 1rem;
     object-fit: cover;
-    display: inline-block;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.2); /* added shadow */
+}
+
+.member img:hover {
+    transform: scale(1.1);
 }
 
 .member a {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex: 1;
-    min-width: 0;
+    color: #000;
+    transition: color 0.3s ease;
 }
 
+.member a:hover {
+    color: #007bff;
+}
+
+.twitter-feed {
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.15); /* added shadow */
+}
+
+.section-break {
+    height: 1px;
+    background-color: #c0c0c0; 
+    margin: 2rem 0; 
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: #c0c0c0;
+    color: #ffffff;
+    padding: 1rem 0;
+}
 
 @media (max-width: 768px) {
-    body {
-        padding: 1rem;
-    }
-    .collapse-custom {
-        margin-right: 15px;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .member img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .twitter-feed {
-        margin-top: 1rem;
-    }
-    
     .navbar {
         margin-bottom: 1rem;
+        background-color: #f8f9fa;
     }
     
     .nav-link {
